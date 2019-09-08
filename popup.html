@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+    href=“https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap”
+    rel=“stylesheet”>
+    <title>Document</title>
+    <style>
+      . {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #83d0f2;
+        padding: 10px;
+        font-family: ‘Source Sans Pro’, sans-serif;
+      }
+
+      .mainContainer {
+        width: 250px;
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .button {
+        font-family: ‘Source Sans Pro’, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        width: 170px;
+        height: 35px;
+        border: 5px solid #83d0f2;
+        background-color: #f9f9f9;
+        cursor: pointer;
+      }
+
+      #title {
+        margin-left: 10px;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <p id="title">
+        <strong><i>MDN Stripper</i></strong> helps you see things clearly.
+      </p>
+      <button class="button" id="strip">LET'S STRIP!</button>
+      <button class="button" id="undo">PUT IT BACK ON!</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

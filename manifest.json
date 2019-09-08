@@ -1,0 +1,20 @@
+{
+  "name": "MDN Stripper",
+  "version": "1.0",
+  "description": "Are you tired of reading MDN docs with all of the other clutter? With MDN Stripper, you can boost your MDN document research productivity 1000% with the click of a button.",
+  "permissions": ["activeTab", "declarativeContent", "storage", "tabs"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://developer.mozilla.org/*/"],
+      "js": ["main.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "MDN Stripper"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
